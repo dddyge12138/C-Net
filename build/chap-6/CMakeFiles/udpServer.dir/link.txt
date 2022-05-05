@@ -1,0 +1,1 @@
+/usr/bin/cc   -rdynamic CMakeFiles/udpServer.dir/udpServer.c.o  -o ../bin/udpServer ../lib/libC-Test.a -lpthread 

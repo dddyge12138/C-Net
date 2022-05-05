@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "stdio.h": "c",
+        "common.h": "c",
+        "epoll.h": "c",
+        "tcp_server.h": "c"
+    }
+}
