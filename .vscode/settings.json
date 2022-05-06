@@ -3,6 +3,7 @@
         "stdio.h": "c",
         "common.h": "c",
         "epoll.h": "c",
-        "tcp_server.h": "c"
+        "tcp_server.h": "c",
+        "tcp_connection.h": "c"
     }
 }
