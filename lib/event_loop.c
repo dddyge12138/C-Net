@@ -148,7 +148,7 @@ int event_loop_handle_pending_update(struct event_loop *eventLoop, int fd, struc
 
 int channel_event_activate(struct event_loop *eventLoop, int fd, int revents) {
     struct channel_map *map = eventLoop->channelMap;
-    yy_msgx("activate channel fd == %d, revents=%d, %s", fd, revents, eventLoop->thread_name);
+    yy_msgx("activate channel fd == %d, revents=%d, %s, 有活跃事件发生了,fd是%d, 事件不知道是读还是写", fd, revents, eventLoop->thread_name, fd);
 
     if (fd < 0)
         return 0;
@@ -183,7 +183,7 @@ int handleWakeup(void *data) {
     if (n != sizeof one) {
         LOG_ERR("handleWakeup failed");
     }
-    yy_msgx("wakeup, %s", eventLoop->thread_name);
+    yy_msgx("wakeup, %s, 该线程被唤醒起来添加通道事件", eventLoop->thread_name);
 }
 
 struct event_loop *event_loop_init() {

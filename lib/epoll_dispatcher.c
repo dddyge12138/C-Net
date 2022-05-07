@@ -1,4 +1,4 @@
-#include  <sys/epoll.h>
+#include <sys/epoll.h>
 #include "event_dispatcher.h"
 #include "event_loop.h"
 #include "log.h"
@@ -13,7 +13,6 @@ typedef struct {
     struct epoll_event *events;
 } epoll_dispatcher_data;
 
-
 static void *epoll_init(struct event_loop *);
 
 static int epoll_add(struct event_loop *, struct channel *channel1);
@@ -27,13 +26,13 @@ static int epoll_dispatch(struct event_loop *, struct timeval *);
 static void epoll_clear(struct event_loop *);
 
 const struct event_dispatcher epoll_dispatcher = {
-        "epoll",
-        epoll_init,
-        epoll_add,
-        epoll_del,
-        epoll_update,
-        epoll_dispatch,
-        epoll_clear,
+    "epoll",
+    epoll_init,
+    epoll_add,
+    epoll_del,
+    epoll_update,
+    epoll_dispatch,
+    epoll_clear,
 };
 
 void *epoll_init(struct event_loop *eventLoop) {
@@ -41,7 +40,6 @@ void *epoll_init(struct event_loop *eventLoop) {
 
     epollDispatcherData->event_count = 0;
     epollDispatcherData->nfds = 0;
-    epollDispatcherData->realloc_copy = 0;
     epollDispatcherData->efd = 0;
 
     epollDispatcherData->efd = epoll_create1(0);
@@ -53,7 +51,6 @@ void *epoll_init(struct event_loop *eventLoop) {
 
     return epollDispatcherData;
 }
-
 
 int epoll_add(struct event_loop *eventLoop, struct channel *channel1) {
     epoll_dispatcher_data *pollDispatcherData = (epoll_dispatcher_data *) eventLoop->event_dispatcher_data;
@@ -70,9 +67,8 @@ int epoll_add(struct event_loop *eventLoop, struct channel *channel1) {
     struct epoll_event event;
     event.data.fd = fd;
     event.events = events;
-//    event.events = events | EPOLLET;
     if (epoll_ctl(pollDispatcherData->efd, EPOLL_CTL_ADD, fd, &event) == -1) {
-        error(1, errno, "epoll_ctl add  fd failed");
+        error(1, errno, "epoll_ctl add fd failed");
     }
 
     return 0;
@@ -95,7 +91,6 @@ int epoll_del(struct event_loop *eventLoop, struct channel *channel1) {
     struct epoll_event event;
     event.data.fd = fd;
     event.events = events;
-//    event.events = events | EPOLLET;
     if (epoll_ctl(pollDispatcherData->efd, EPOLL_CTL_DEL, fd, &event) == -1) {
         error(1, errno, "epoll_ctl delete fd failed");
     }
@@ -120,7 +115,6 @@ int epoll_update(struct event_loop *eventLoop, struct channel *channel1) {
     struct epoll_event event;
     event.data.fd = fd;
     event.events = events;
-//    event.events = events | EPOLLET;
     if (epoll_ctl(pollDispatcherData->efd, EPOLL_CTL_MOD, fd, &event) == -1) {
         error(1, errno, "epoll_ctl modify fd failed");
     }
@@ -133,21 +127,23 @@ int epoll_dispatch(struct event_loop *eventLoop, struct timeval *timeval) {
     int i, n;
 
     n = epoll_wait(epollDispatcherData->efd, epollDispatcherData->events, MAXEVENTS, -1);
-    yy_msgx("epoll_wait wakeup, %s", eventLoop->thread_name);
+    yy_msgx("epoll_wait wake up, %s, 该线程从epoll_wait中唤醒", eventLoop->thread_name);
     for (i = 0; i < n; i++) {
         if ((epollDispatcherData->events[i].events & EPOLLERR) || (epollDispatcherData->events[i].events & EPOLLHUP)) {
             fprintf(stderr, "epoll error\n");
+            // 关闭该套接字
             close(epollDispatcherData->events[i].data.fd);
             continue;
         }
 
         if (epollDispatcherData->events[i].events & EPOLLIN) {
-            yy_msgx("get message channel fd==%d for read, %s", epollDispatcherData->events[i].data.fd, eventLoop->thread_name);
+            yy_msgx("get message channel fd == %d for read, %s, 该套接字可读", epollDispatcherData->events[i].data.fd, eventLoop->thread_name);
+            // 激活channel通道处理该事件, 比如说什么读写回调函数
             channel_event_activate(eventLoop, epollDispatcherData->events[i].data.fd, EVENT_READ);
         }
 
         if (epollDispatcherData->events[i].events & EPOLLOUT) {
-            yy_msgx("get message channel fd==%d for write, %s", epollDispatcherData->events[i].data.fd,eventLoop->thread_name);
+            yy_msgx("get message channel fd == %d for write, %s, 该套接字可写", epollDispatcherData->events[i].data.fd, EVENT_WRITE);
             channel_event_activate(eventLoop, epollDispatcherData->events[i].data.fd, EVENT_WRITE);
         }
     }
@@ -163,5 +159,5 @@ void epoll_clear(struct event_loop *eventLoop) {
     free(epollDispatcherData);
     eventLoop->event_dispatcher_data = NULL;
 
-    return;
+    return ;
 }
