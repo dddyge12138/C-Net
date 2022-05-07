@@ -17,7 +17,7 @@ include(CheckSymbolExists)
 check_symbol_exists(epoll_create "sys/epoll.h" EPOLL_EXISTS)
 if (EPOLL_EXISTS)
     # Linux下设置为epoll
-    set(EPOLL_ENABLE 1 CACHE INTERNAL "enable epoll")
+#    set(EPOLL_ENABLE 1 CACHE INTERNAL "enable epoll")
 
     # Linux下也设置为poll
     set(EPOLL_ENABLE "" CACHE INTERNAL "not enable epoll")

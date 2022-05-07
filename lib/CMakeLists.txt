@@ -7,6 +7,7 @@ if (EPOLL_EXISTS)
             acceptor.c
             channel_map.c
             poll_dispatcher.c
+            epoll_dispatcher.c
             thread_pool.c
             event_loop_thread.c
             utils.c

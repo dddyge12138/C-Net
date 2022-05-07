@@ -168,6 +168,8 @@ void tcp_server_start(struct TCPserver *tcpServer) {
     struct channel *channel = channel_new(acceptor->listen_fd, EVENT_READ, handle_connection_established, NULL,
                                 tcpServer);
     event_loop_add_channel_event(eventLoop, channel->fd, channel);
+    yy_msgx("acceptor开启, 新增channel事件成功(监听套接字有读事件则进行处理), 该channel已加入该线程的事件循环:%s, fd: %d", eventLoop->thread_name, channel->fd);
+
     return ;
 }
 

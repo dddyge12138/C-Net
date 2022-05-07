@@ -279,6 +279,33 @@ channel_map.c.s:
 	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f lib/CMakeFiles/C-Net.dir/build.make lib/CMakeFiles/C-Net.dir/channel_map.c.s
 .PHONY : channel_map.c.s
 
+epoll_dispatcher.o: epoll_dispatcher.c.o
+
+.PHONY : epoll_dispatcher.o
+
+# target to build an object file
+epoll_dispatcher.c.o:
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f lib/CMakeFiles/C-Net.dir/build.make lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o
+.PHONY : epoll_dispatcher.c.o
+
+epoll_dispatcher.i: epoll_dispatcher.c.i
+
+.PHONY : epoll_dispatcher.i
+
+# target to preprocess a source file
+epoll_dispatcher.c.i:
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f lib/CMakeFiles/C-Net.dir/build.make lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.i
+.PHONY : epoll_dispatcher.c.i
+
+epoll_dispatcher.s: epoll_dispatcher.c.s
+
+.PHONY : epoll_dispatcher.s
+
+# target to generate assembly for a file
+epoll_dispatcher.c.s:
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f lib/CMakeFiles/C-Net.dir/build.make lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.s
+.PHONY : epoll_dispatcher.c.s
+
 event_loop.o: event_loop.c.o
 
 .PHONY : event_loop.o
@@ -520,6 +547,9 @@ help:
 	@echo "... channel_map.o"
 	@echo "... channel_map.i"
 	@echo "... channel_map.s"
+	@echo "... epoll_dispatcher.o"
+	@echo "... epoll_dispatcher.i"
+	@echo "... epoll_dispatcher.s"
 	@echo "... event_loop.o"
 	@echo "... event_loop.i"
 	@echo "... event_loop.s"

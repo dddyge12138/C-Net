@@ -8,6 +8,7 @@ set(CMAKE_DEPENDS_CHECK_C
   "/home/yytest/yytest/C-Net/lib/buffer.c" "/home/yytest/yytest/C-Net/build/lib/CMakeFiles/C-Net.dir/buffer.c.o"
   "/home/yytest/yytest/C-Net/lib/channel.c" "/home/yytest/yytest/C-Net/build/lib/CMakeFiles/C-Net.dir/channel.c.o"
   "/home/yytest/yytest/C-Net/lib/channel_map.c" "/home/yytest/yytest/C-Net/build/lib/CMakeFiles/C-Net.dir/channel_map.c.o"
+  "/home/yytest/yytest/C-Net/lib/epoll_dispatcher.c" "/home/yytest/yytest/C-Net/build/lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o"
   "/home/yytest/yytest/C-Net/lib/event_loop.c" "/home/yytest/yytest/C-Net/build/lib/CMakeFiles/C-Net.dir/event_loop.c.o"
   "/home/yytest/yytest/C-Net/lib/event_loop_thread.c" "/home/yytest/yytest/C-Net/build/lib/CMakeFiles/C-Net.dir/event_loop_thread.c.o"
   "/home/yytest/yytest/C-Net/lib/log.c" "/home/yytest/yytest/C-Net/build/lib/CMakeFiles/C-Net.dir/log.c.o"

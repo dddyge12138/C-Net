@@ -210,7 +210,7 @@ struct event_loop *event_loop_init_with_name(char *thread_name) {
     eventLoop->eventDispatcher = &epoll_dispatcher;
 #else
     yy_msgx("set poll as dispatcher, %s", eventLoop->thread_name);
-    eventLoop->eventDispatcher = &epoll_dispatcher;
+    eventLoop->eventDispatcher = &poll_dispatcher;
 #endif
     eventLoop->event_dispatcher_data = eventLoop->eventDispatcher->init(eventLoop);
 
@@ -226,6 +226,7 @@ struct event_loop *event_loop_init_with_name(char *thread_name) {
 
     struct channel *channel = channel_new(eventLoop->socketPair[1], EVENT_READ, handleWakeup, NULL, eventLoop);
     event_loop_add_channel_event(eventLoop, eventLoop->socketPair[1], channel);
+    yy_msgx("当前线程: %s的事件循环开启成功, 文件描述符: %d", eventLoop->thread_name, channel->fd);
 
     return eventLoop;
 }

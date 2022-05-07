@@ -65,6 +65,22 @@ lib/CMakeFiles/C-Net.dir/channel_map.c.o: ../lib/tcp_server.h
 lib/CMakeFiles/C-Net.dir/channel_map.c.o: ../lib/thread_pool.h
 lib/CMakeFiles/C-Net.dir/channel_map.c.o: include/config.h
 
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/acceptor.h
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/buffer.h
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/channel.h
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/channel_map.h
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/common.h
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/epoll_dispatcher.c
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/event_dispatcher.h
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/event_loop.h
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/event_loop_thread.h
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/inetaddress.h
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/log.h
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/tcp_connection.h
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/tcp_server.h
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/thread_pool.h
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: include/config.h
+
 lib/CMakeFiles/C-Net.dir/event_loop.c.o: ../lib/acceptor.h
 lib/CMakeFiles/C-Net.dir/event_loop.c.o: ../lib/buffer.h
 lib/CMakeFiles/C-Net.dir/event_loop.c.o: ../lib/channel.h

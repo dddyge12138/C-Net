@@ -225,9 +225,33 @@ lib/CMakeFiles/C-Net.dir/poll_dispatcher.c.o.provides: lib/CMakeFiles/C-Net.dir/
 lib/CMakeFiles/C-Net.dir/poll_dispatcher.c.o.provides.build: lib/CMakeFiles/C-Net.dir/poll_dispatcher.c.o
 
 
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: lib/CMakeFiles/C-Net.dir/flags.make
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o: ../lib/epoll_dispatcher.c
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yytest/yytest/C-Net/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o"
+	cd /home/yytest/yytest/C-Net/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C-Net.dir/epoll_dispatcher.c.o   -c /home/yytest/yytest/C-Net/lib/epoll_dispatcher.c
+
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/C-Net.dir/epoll_dispatcher.c.i"
+	cd /home/yytest/yytest/C-Net/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/yytest/yytest/C-Net/lib/epoll_dispatcher.c > CMakeFiles/C-Net.dir/epoll_dispatcher.c.i
+
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/C-Net.dir/epoll_dispatcher.c.s"
+	cd /home/yytest/yytest/C-Net/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/yytest/yytest/C-Net/lib/epoll_dispatcher.c -o CMakeFiles/C-Net.dir/epoll_dispatcher.c.s
+
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o.requires:
+
+.PHONY : lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o.requires
+
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o.provides: lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o.requires
+	$(MAKE) -f lib/CMakeFiles/C-Net.dir/build.make lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o.provides.build
+.PHONY : lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o.provides
+
+lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o.provides.build: lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o
+
+
 lib/CMakeFiles/C-Net.dir/thread_pool.c.o: lib/CMakeFiles/C-Net.dir/flags.make
 lib/CMakeFiles/C-Net.dir/thread_pool.c.o: ../lib/thread_pool.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yytest/yytest/C-Net/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object lib/CMakeFiles/C-Net.dir/thread_pool.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yytest/yytest/C-Net/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/CMakeFiles/C-Net.dir/thread_pool.c.o"
 	cd /home/yytest/yytest/C-Net/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C-Net.dir/thread_pool.c.o   -c /home/yytest/yytest/C-Net/lib/thread_pool.c
 
 lib/CMakeFiles/C-Net.dir/thread_pool.c.i: cmake_force
@@ -251,7 +275,7 @@ lib/CMakeFiles/C-Net.dir/thread_pool.c.o.provides.build: lib/CMakeFiles/C-Net.di
 
 lib/CMakeFiles/C-Net.dir/event_loop_thread.c.o: lib/CMakeFiles/C-Net.dir/flags.make
 lib/CMakeFiles/C-Net.dir/event_loop_thread.c.o: ../lib/event_loop_thread.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yytest/yytest/C-Net/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building C object lib/CMakeFiles/C-Net.dir/event_loop_thread.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yytest/yytest/C-Net/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/CMakeFiles/C-Net.dir/event_loop_thread.c.o"
 	cd /home/yytest/yytest/C-Net/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C-Net.dir/event_loop_thread.c.o   -c /home/yytest/yytest/C-Net/lib/event_loop_thread.c
 
 lib/CMakeFiles/C-Net.dir/event_loop_thread.c.i: cmake_force
@@ -275,7 +299,7 @@ lib/CMakeFiles/C-Net.dir/event_loop_thread.c.o.provides.build: lib/CMakeFiles/C-
 
 lib/CMakeFiles/C-Net.dir/utils.c.o: lib/CMakeFiles/C-Net.dir/flags.make
 lib/CMakeFiles/C-Net.dir/utils.c.o: ../lib/utils.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yytest/yytest/C-Net/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building C object lib/CMakeFiles/C-Net.dir/utils.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yytest/yytest/C-Net/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/CMakeFiles/C-Net.dir/utils.c.o"
 	cd /home/yytest/yytest/C-Net/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C-Net.dir/utils.c.o   -c /home/yytest/yytest/C-Net/lib/utils.c
 
 lib/CMakeFiles/C-Net.dir/utils.c.i: cmake_force
@@ -299,7 +323,7 @@ lib/CMakeFiles/C-Net.dir/utils.c.o.provides.build: lib/CMakeFiles/C-Net.dir/util
 
 lib/CMakeFiles/C-Net.dir/buffer.c.o: lib/CMakeFiles/C-Net.dir/flags.make
 lib/CMakeFiles/C-Net.dir/buffer.c.o: ../lib/buffer.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yytest/yytest/C-Net/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building C object lib/CMakeFiles/C-Net.dir/buffer.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yytest/yytest/C-Net/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/CMakeFiles/C-Net.dir/buffer.c.o"
 	cd /home/yytest/yytest/C-Net/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C-Net.dir/buffer.c.o   -c /home/yytest/yytest/C-Net/lib/buffer.c
 
 lib/CMakeFiles/C-Net.dir/buffer.c.i: cmake_force
@@ -323,7 +347,7 @@ lib/CMakeFiles/C-Net.dir/buffer.c.o.provides.build: lib/CMakeFiles/C-Net.dir/buf
 
 lib/CMakeFiles/C-Net.dir/tcp_connection.c.o: lib/CMakeFiles/C-Net.dir/flags.make
 lib/CMakeFiles/C-Net.dir/tcp_connection.c.o: ../lib/tcp_connection.c
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yytest/yytest/C-Net/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building C object lib/CMakeFiles/C-Net.dir/tcp_connection.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/yytest/yytest/C-Net/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building C object lib/CMakeFiles/C-Net.dir/tcp_connection.c.o"
 	cd /home/yytest/yytest/C-Net/build/lib && /usr/bin/cc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -o CMakeFiles/C-Net.dir/tcp_connection.c.o   -c /home/yytest/yytest/C-Net/lib/tcp_connection.c
 
 lib/CMakeFiles/C-Net.dir/tcp_connection.c.i: cmake_force
@@ -354,6 +378,7 @@ C__Net_OBJECTS = \
 "CMakeFiles/C-Net.dir/acceptor.c.o" \
 "CMakeFiles/C-Net.dir/channel_map.c.o" \
 "CMakeFiles/C-Net.dir/poll_dispatcher.c.o" \
+"CMakeFiles/C-Net.dir/epoll_dispatcher.c.o" \
 "CMakeFiles/C-Net.dir/thread_pool.c.o" \
 "CMakeFiles/C-Net.dir/event_loop_thread.c.o" \
 "CMakeFiles/C-Net.dir/utils.c.o" \
@@ -370,6 +395,7 @@ lib/libC-Net.a: lib/CMakeFiles/C-Net.dir/channel.c.o
 lib/libC-Net.a: lib/CMakeFiles/C-Net.dir/acceptor.c.o
 lib/libC-Net.a: lib/CMakeFiles/C-Net.dir/channel_map.c.o
 lib/libC-Net.a: lib/CMakeFiles/C-Net.dir/poll_dispatcher.c.o
+lib/libC-Net.a: lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o
 lib/libC-Net.a: lib/CMakeFiles/C-Net.dir/thread_pool.c.o
 lib/libC-Net.a: lib/CMakeFiles/C-Net.dir/event_loop_thread.c.o
 lib/libC-Net.a: lib/CMakeFiles/C-Net.dir/utils.c.o
@@ -377,7 +403,7 @@ lib/libC-Net.a: lib/CMakeFiles/C-Net.dir/buffer.c.o
 lib/libC-Net.a: lib/CMakeFiles/C-Net.dir/tcp_connection.c.o
 lib/libC-Net.a: lib/CMakeFiles/C-Net.dir/build.make
 lib/libC-Net.a: lib/CMakeFiles/C-Net.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yytest/yytest/C-Net/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Linking C static library libC-Net.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/yytest/yytest/C-Net/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Linking C static library libC-Net.a"
 	cd /home/yytest/yytest/C-Net/build/lib && $(CMAKE_COMMAND) -P CMakeFiles/C-Net.dir/cmake_clean_target.cmake
 	cd /home/yytest/yytest/C-Net/build/lib && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/C-Net.dir/link.txt --verbose=$(VERBOSE)
 
@@ -393,6 +419,7 @@ lib/CMakeFiles/C-Net.dir/requires: lib/CMakeFiles/C-Net.dir/channel.c.o.requires
 lib/CMakeFiles/C-Net.dir/requires: lib/CMakeFiles/C-Net.dir/acceptor.c.o.requires
 lib/CMakeFiles/C-Net.dir/requires: lib/CMakeFiles/C-Net.dir/channel_map.c.o.requires
 lib/CMakeFiles/C-Net.dir/requires: lib/CMakeFiles/C-Net.dir/poll_dispatcher.c.o.requires
+lib/CMakeFiles/C-Net.dir/requires: lib/CMakeFiles/C-Net.dir/epoll_dispatcher.c.o.requires
 lib/CMakeFiles/C-Net.dir/requires: lib/CMakeFiles/C-Net.dir/thread_pool.c.o.requires
 lib/CMakeFiles/C-Net.dir/requires: lib/CMakeFiles/C-Net.dir/event_loop_thread.c.o.requires
 lib/CMakeFiles/C-Net.dir/requires: lib/CMakeFiles/C-Net.dir/utils.c.o.requires

@@ -18,7 +18,7 @@ struct event_dispatcher {
     int(*del)(struct event_loop * eventLoop, struct channel * channel);
 
     /** 通知dispatcher更新channel对应的事件 */
-    int (*update)(struct event_loop * eventLoop, struct timeval *);
+    int (*update)(struct event_loop * eventLoop, struct channel * channel);
 
     /** 实现事件分发，然后调用event_loop的event_activate方法执行callback*/
     int (*dispatch)(struct event_loop * eventLoop, struct timeval *);

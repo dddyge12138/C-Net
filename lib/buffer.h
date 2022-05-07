@@ -11,7 +11,7 @@ struct buffer {
     int total_size;     // 总大小
 };
 
-struct buffer *buferr_new();
+struct buffer *buffer_new();
 
 void buffer_free(struct buffer *buffer);
 

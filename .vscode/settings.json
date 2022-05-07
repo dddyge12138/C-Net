@@ -4,6 +4,9 @@
         "common.h": "c",
         "epoll.h": "c",
         "tcp_server.h": "c",
-        "tcp_connection.h": "c"
+        "tcp_connection.h": "c",
+        "channel.h": "c",
+        "event_loop.h": "c",
+        "buffer.h": "c"
     }
 }

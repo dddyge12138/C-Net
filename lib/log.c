@@ -12,7 +12,7 @@ void error(int status, int err, char *fmt, ...) {
     vfprintf(stderr, fmt, ap);
     va_end(ap);
     if (err)
-        fprintf(stderr, ": $s, (%d)\n", stderror(err), err);
+        fprintf(stderr, ": %s, (%d)\n", strerror(err), err);
     if (status)
         exit(status);
 }
@@ -91,7 +91,7 @@ void yy_debugx(const char *fmt, ...)
 {
     va_list ap;
 
-    va_Start(ap, fmt);
+    va_start(ap, fmt);
     yy_logx(LOG_DEBUG_TYPE, NULL, fmt, ap);
     va_end(ap);
 }

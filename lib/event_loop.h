@@ -46,7 +46,7 @@ int event_loop_add_channel_event(struct event_loop *eventLoop, int fd, struct ch
 
 int event_loop_remove_channel_event(struct event_loop *eventLoop, int fd, struct channel *channel1);
 
-int evenet_loop_update_channel_event(struct event_loop *eventLoop, int fd, struct channel *channel1);
+int event_loop_update_channel_event(struct event_loop *eventLoop, int fd, struct channel *channel1);
 
 int event_loop_handle_pending_add(struct event_loop *eventLoop, int fd, struct channel *channel);
 
