@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yytest/yytest/C-Test
+CMAKE_SOURCE_DIR = /home/yytest/yytest/C-Net
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yytest/yytest/C-Test/build
+CMAKE_BINARY_DIR = /home/yytest/yytest/C-Net/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ list_install_components/fast: list_install_components
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Test/build/CMakeFiles /home/yytest/yytest/C-Test/build/chap-5/CMakeFiles/progress.marks
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-5/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Test/build/CMakeFiles 0
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Net/build/CMakeFiles /home/yytest/yytest/C-Net/build/chap-5/CMakeFiles/progress.marks
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-5/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Net/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-5/clean
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-5/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-5/preinstall
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-5/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-5/preinstall
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-5/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 chap-5/CMakeFiles/Client.dir/rule:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-5/CMakeFiles/Client.dir/rule
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-5/CMakeFiles/Client.dir/rule
 .PHONY : chap-5/CMakeFiles/Client.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ Client: chap-5/CMakeFiles/Client.dir/rule
 
 # fast build rule for target.
 Client/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-5/CMakeFiles/Client.dir/build.make chap-5/CMakeFiles/Client.dir/build
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-5/CMakeFiles/Client.dir/build.make chap-5/CMakeFiles/Client.dir/build
 .PHONY : Client/fast
 
 # Convenience name for target.
 chap-5/CMakeFiles/Server.dir/rule:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-5/CMakeFiles/Server.dir/rule
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-5/CMakeFiles/Server.dir/rule
 .PHONY : chap-5/CMakeFiles/Server.dir/rule
 
 # Convenience name for target.
@@ -183,7 +183,7 @@ Server: chap-5/CMakeFiles/Server.dir/rule
 
 # fast build rule for target.
 Server/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-5/CMakeFiles/Server.dir/build.make chap-5/CMakeFiles/Server.dir/build
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-5/CMakeFiles/Server.dir/build.make chap-5/CMakeFiles/Server.dir/build
 .PHONY : Server/fast
 
 Client.o: Client.c.o
@@ -192,7 +192,7 @@ Client.o: Client.c.o
 
 # target to build an object file
 Client.c.o:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-5/CMakeFiles/Client.dir/build.make chap-5/CMakeFiles/Client.dir/Client.c.o
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-5/CMakeFiles/Client.dir/build.make chap-5/CMakeFiles/Client.dir/Client.c.o
 .PHONY : Client.c.o
 
 Client.i: Client.c.i
@@ -201,7 +201,7 @@ Client.i: Client.c.i
 
 # target to preprocess a source file
 Client.c.i:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-5/CMakeFiles/Client.dir/build.make chap-5/CMakeFiles/Client.dir/Client.c.i
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-5/CMakeFiles/Client.dir/build.make chap-5/CMakeFiles/Client.dir/Client.c.i
 .PHONY : Client.c.i
 
 Client.s: Client.c.s
@@ -210,7 +210,7 @@ Client.s: Client.c.s
 
 # target to generate assembly for a file
 Client.c.s:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-5/CMakeFiles/Client.dir/build.make chap-5/CMakeFiles/Client.dir/Client.c.s
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-5/CMakeFiles/Client.dir/build.make chap-5/CMakeFiles/Client.dir/Client.c.s
 .PHONY : Client.c.s
 
 Server.o: Server.c.o
@@ -219,7 +219,7 @@ Server.o: Server.c.o
 
 # target to build an object file
 Server.c.o:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-5/CMakeFiles/Server.dir/build.make chap-5/CMakeFiles/Server.dir/Server.c.o
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-5/CMakeFiles/Server.dir/build.make chap-5/CMakeFiles/Server.dir/Server.c.o
 .PHONY : Server.c.o
 
 Server.i: Server.c.i
@@ -228,7 +228,7 @@ Server.i: Server.c.i
 
 # target to preprocess a source file
 Server.c.i:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-5/CMakeFiles/Server.dir/build.make chap-5/CMakeFiles/Server.dir/Server.c.i
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-5/CMakeFiles/Server.dir/build.make chap-5/CMakeFiles/Server.dir/Server.c.i
 .PHONY : Server.c.i
 
 Server.s: Server.c.s
@@ -237,7 +237,7 @@ Server.s: Server.c.s
 
 # target to generate assembly for a file
 Server.c.s:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-5/CMakeFiles/Server.dir/build.make chap-5/CMakeFiles/Server.dir/Server.c.s
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-5/CMakeFiles/Server.dir/build.make chap-5/CMakeFiles/Server.dir/Server.c.s
 .PHONY : Server.c.s
 
 # Help Target
@@ -271,6 +271,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

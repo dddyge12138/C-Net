@@ -1,1 +1,1 @@
-/usr/bin/cc   -rdynamic CMakeFiles/poll-server-onethread.dir/poll-server-onethread.c.o  -o ../bin/poll-server-onethread ../lib/libC-Test.a -lpthread 
+/usr/bin/cc   -rdynamic CMakeFiles/poll-server-onethread.dir/poll-server-onethread.c.o  -o ../bin/poll-server-onethread ../lib/libC-Net.a -lpthread 

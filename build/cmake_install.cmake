@@ -1,4 +1,4 @@
-# Install script for directory: /home/yytest/yytest/C-Test
+# Install script for directory: /home/yytest/yytest/C-Net
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -39,14 +39,14 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/yytest/yytest/C-Test/build/lib/cmake_install.cmake")
-  include("/home/yytest/yytest/C-Test/build/chap-5/cmake_install.cmake")
-  include("/home/yytest/yytest/C-Test/build/chap-6/cmake_install.cmake")
-  include("/home/yytest/yytest/C-Test/build/chap-7/cmake_install.cmake")
-  include("/home/yytest/yytest/C-Test/build/chap-22/cmake_install.cmake")
-  include("/home/yytest/yytest/C-Test/build/chap-23/cmake_install.cmake")
-  include("/home/yytest/yytest/C-Test/build/chap-26/cmake_install.cmake")
-  include("/home/yytest/yytest/C-Test/build/chap-27/cmake_install.cmake")
+  include("/home/yytest/yytest/C-Net/build/lib/cmake_install.cmake")
+  include("/home/yytest/yytest/C-Net/build/chap-5/cmake_install.cmake")
+  include("/home/yytest/yytest/C-Net/build/chap-6/cmake_install.cmake")
+  include("/home/yytest/yytest/C-Net/build/chap-7/cmake_install.cmake")
+  include("/home/yytest/yytest/C-Net/build/chap-22/cmake_install.cmake")
+  include("/home/yytest/yytest/C-Net/build/chap-23/cmake_install.cmake")
+  include("/home/yytest/yytest/C-Net/build/chap-26/cmake_install.cmake")
+  include("/home/yytest/yytest/C-Net/build/chap-27/cmake_install.cmake")
 
 endif()
 
@@ -58,5 +58,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/yytest/yytest/C-Test/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/yytest/yytest/C-Net/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_C
-  "/home/yytest/yytest/C-Test/chap-7/unixstreamserver.c" "/home/yytest/yytest/C-Test/build/chap-7/CMakeFiles/unixstreamserver.dir/unixstreamserver.c.o"
+  "/home/yytest/yytest/C-Net/chap-7/unixstreamserver.c" "/home/yytest/yytest/C-Net/build/chap-7/CMakeFiles/unixstreamserver.dir/unixstreamserver.c.o"
   )
 set(CMAKE_C_COMPILER_ID "GNU")
 
@@ -16,7 +16,6 @@ set(CMAKE_C_TARGET_INCLUDE_PATH
 
 # Targets to which this target links.
 set(CMAKE_TARGET_LINKED_INFO_FILES
-  "/home/yytest/yytest/C-Test/build/lib/CMakeFiles/C-Test.dir/DependInfo.cmake"
   )
 
 # Fortran module output directory.

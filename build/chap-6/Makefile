@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yytest/yytest/C-Test
+CMAKE_SOURCE_DIR = /home/yytest/yytest/C-Net
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yytest/yytest/C-Test/build
+CMAKE_BINARY_DIR = /home/yytest/yytest/C-Net/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Test/build/CMakeFiles /home/yytest/yytest/C-Test/build/chap-6/CMakeFiles/progress.marks
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-6/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Test/build/CMakeFiles 0
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Net/build/CMakeFiles /home/yytest/yytest/C-Net/build/chap-6/CMakeFiles/progress.marks
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-6/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Net/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-6/clean
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-6/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-6/preinstall
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-6/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-6/preinstall
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-6/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 chap-6/CMakeFiles/udpServer.dir/rule:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-6/CMakeFiles/udpServer.dir/rule
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-6/CMakeFiles/udpServer.dir/rule
 .PHONY : chap-6/CMakeFiles/udpServer.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ udpServer: chap-6/CMakeFiles/udpServer.dir/rule
 
 # fast build rule for target.
 udpServer/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-6/CMakeFiles/udpServer.dir/build.make chap-6/CMakeFiles/udpServer.dir/build
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-6/CMakeFiles/udpServer.dir/build.make chap-6/CMakeFiles/udpServer.dir/build
 .PHONY : udpServer/fast
 
 # Convenience name for target.
 chap-6/CMakeFiles/udpClient.dir/rule:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-6/CMakeFiles/udpClient.dir/rule
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-6/CMakeFiles/udpClient.dir/rule
 .PHONY : chap-6/CMakeFiles/udpClient.dir/rule
 
 # Convenience name for target.
@@ -183,7 +183,7 @@ udpClient: chap-6/CMakeFiles/udpClient.dir/rule
 
 # fast build rule for target.
 udpClient/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-6/CMakeFiles/udpClient.dir/build.make chap-6/CMakeFiles/udpClient.dir/build
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-6/CMakeFiles/udpClient.dir/build.make chap-6/CMakeFiles/udpClient.dir/build
 .PHONY : udpClient/fast
 
 udpClient.o: udpClient.c.o
@@ -192,7 +192,7 @@ udpClient.o: udpClient.c.o
 
 # target to build an object file
 udpClient.c.o:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-6/CMakeFiles/udpClient.dir/build.make chap-6/CMakeFiles/udpClient.dir/udpClient.c.o
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-6/CMakeFiles/udpClient.dir/build.make chap-6/CMakeFiles/udpClient.dir/udpClient.c.o
 .PHONY : udpClient.c.o
 
 udpClient.i: udpClient.c.i
@@ -201,7 +201,7 @@ udpClient.i: udpClient.c.i
 
 # target to preprocess a source file
 udpClient.c.i:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-6/CMakeFiles/udpClient.dir/build.make chap-6/CMakeFiles/udpClient.dir/udpClient.c.i
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-6/CMakeFiles/udpClient.dir/build.make chap-6/CMakeFiles/udpClient.dir/udpClient.c.i
 .PHONY : udpClient.c.i
 
 udpClient.s: udpClient.c.s
@@ -210,7 +210,7 @@ udpClient.s: udpClient.c.s
 
 # target to generate assembly for a file
 udpClient.c.s:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-6/CMakeFiles/udpClient.dir/build.make chap-6/CMakeFiles/udpClient.dir/udpClient.c.s
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-6/CMakeFiles/udpClient.dir/build.make chap-6/CMakeFiles/udpClient.dir/udpClient.c.s
 .PHONY : udpClient.c.s
 
 udpServer.o: udpServer.c.o
@@ -219,7 +219,7 @@ udpServer.o: udpServer.c.o
 
 # target to build an object file
 udpServer.c.o:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-6/CMakeFiles/udpServer.dir/build.make chap-6/CMakeFiles/udpServer.dir/udpServer.c.o
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-6/CMakeFiles/udpServer.dir/build.make chap-6/CMakeFiles/udpServer.dir/udpServer.c.o
 .PHONY : udpServer.c.o
 
 udpServer.i: udpServer.c.i
@@ -228,7 +228,7 @@ udpServer.i: udpServer.c.i
 
 # target to preprocess a source file
 udpServer.c.i:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-6/CMakeFiles/udpServer.dir/build.make chap-6/CMakeFiles/udpServer.dir/udpServer.c.i
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-6/CMakeFiles/udpServer.dir/build.make chap-6/CMakeFiles/udpServer.dir/udpServer.c.i
 .PHONY : udpServer.c.i
 
 udpServer.s: udpServer.c.s
@@ -237,7 +237,7 @@ udpServer.s: udpServer.c.s
 
 # target to generate assembly for a file
 udpServer.c.s:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-6/CMakeFiles/udpServer.dir/build.make chap-6/CMakeFiles/udpServer.dir/udpServer.c.s
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-6/CMakeFiles/udpServer.dir/build.make chap-6/CMakeFiles/udpServer.dir/udpServer.c.s
 .PHONY : udpServer.c.s
 
 # Help Target
@@ -271,6 +271,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

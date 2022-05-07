@@ -1,1 +1,1 @@
-/usr/bin/cc   -rdynamic CMakeFiles/Client.dir/Client.c.o  -o ../bin/Client ../lib/libC-Test.a -lpthread 
+/usr/bin/cc   -rdynamic CMakeFiles/Client.dir/Client.c.o  -o ../bin/Client -lC-Test 

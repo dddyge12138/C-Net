@@ -1,1 +1,1 @@
-/usr/bin/cc   -rdynamic CMakeFiles/udpClient.dir/udpClient.c.o  -o ../bin/udpClient ../lib/libC-Test.a -lpthread 
+/usr/bin/cc   -rdynamic CMakeFiles/udpClient.dir/udpClient.c.o  -o ../bin/udpClient -lC-Test 

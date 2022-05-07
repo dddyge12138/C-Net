@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yytest/yytest/C-Test
+CMAKE_SOURCE_DIR = /home/yytest/yytest/C-Net
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yytest/yytest/C-Test/build
+CMAKE_BINARY_DIR = /home/yytest/yytest/C-Net/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Test/build/CMakeFiles /home/yytest/yytest/C-Test/build/chap-23/CMakeFiles/progress.marks
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-23/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Test/build/CMakeFiles 0
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Net/build/CMakeFiles /home/yytest/yytest/C-Net/build/chap-23/CMakeFiles/progress.marks
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-23/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Net/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-23/clean
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-23/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-23/preinstall
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-23/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-23/preinstall
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-23/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 chap-23/CMakeFiles/epoll01.dir/rule:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-23/CMakeFiles/epoll01.dir/rule
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-23/CMakeFiles/epoll01.dir/rule
 .PHONY : chap-23/CMakeFiles/epoll01.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ epoll01: chap-23/CMakeFiles/epoll01.dir/rule
 
 # fast build rule for target.
 epoll01/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-23/CMakeFiles/epoll01.dir/build.make chap-23/CMakeFiles/epoll01.dir/build
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-23/CMakeFiles/epoll01.dir/build.make chap-23/CMakeFiles/epoll01.dir/build
 .PHONY : epoll01/fast
 
 epoll01.o: epoll01.c.o
@@ -177,7 +177,7 @@ epoll01.o: epoll01.c.o
 
 # target to build an object file
 epoll01.c.o:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-23/CMakeFiles/epoll01.dir/build.make chap-23/CMakeFiles/epoll01.dir/epoll01.c.o
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-23/CMakeFiles/epoll01.dir/build.make chap-23/CMakeFiles/epoll01.dir/epoll01.c.o
 .PHONY : epoll01.c.o
 
 epoll01.i: epoll01.c.i
@@ -186,7 +186,7 @@ epoll01.i: epoll01.c.i
 
 # target to preprocess a source file
 epoll01.c.i:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-23/CMakeFiles/epoll01.dir/build.make chap-23/CMakeFiles/epoll01.dir/epoll01.c.i
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-23/CMakeFiles/epoll01.dir/build.make chap-23/CMakeFiles/epoll01.dir/epoll01.c.i
 .PHONY : epoll01.c.i
 
 epoll01.s: epoll01.c.s
@@ -195,7 +195,7 @@ epoll01.s: epoll01.c.s
 
 # target to generate assembly for a file
 epoll01.c.s:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-23/CMakeFiles/epoll01.dir/build.make chap-23/CMakeFiles/epoll01.dir/epoll01.c.s
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-23/CMakeFiles/epoll01.dir/build.make chap-23/CMakeFiles/epoll01.dir/epoll01.c.s
 .PHONY : epoll01.c.s
 
 # Help Target
@@ -225,6 +225,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

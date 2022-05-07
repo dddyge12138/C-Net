@@ -1,1 +1,1 @@
-/usr/bin/cc   -rdynamic CMakeFiles/nonblockingserver.dir/nonblockingserver.c.o  -o ../bin/nonblockingserver ../lib/libC-Test.a -lpthread 
+/usr/bin/cc   -rdynamic CMakeFiles/nonblockingserver.dir/nonblockingserver.c.o  -o ../bin/nonblockingserver ../lib/libC-Net.a -lpthread 

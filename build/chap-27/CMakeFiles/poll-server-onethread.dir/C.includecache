@@ -226,15 +226,15 @@ event_loop.h
 event_loop_thread.h
 ../lib/event_loop_thread.h
 
-/home/yytest/yytest/C-Test/chap-27/poll-server-onethread.c
+/home/yytest/yytest/C-Net/chap-27/poll-server-onethread.c
 lib/acceptor.h
 -
 lib/common.h
-/home/yytest/yytest/C-Test/chap-27/lib/common.h
+/home/yytest/yytest/C-Net/chap-27/lib/common.h
 lib/event_loop.h
-/home/yytest/yytest/C-Test/chap-27/lib/event_loop.h
+/home/yytest/yytest/C-Net/chap-27/lib/event_loop.h
 lib/tcp_server.h
-/home/yytest/yytest/C-Test/chap-27/lib/tcp_server.h
+/home/yytest/yytest/C-Net/chap-27/lib/tcp_server.h
 
 include/config.h
 

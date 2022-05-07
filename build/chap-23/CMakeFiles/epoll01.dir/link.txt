@@ -1,1 +1,1 @@
-/usr/bin/cc   -rdynamic CMakeFiles/epoll01.dir/epoll01.c.o  -o ../bin/epoll01 ../lib/libC-Test.a -lpthread 
+/usr/bin/cc   -rdynamic CMakeFiles/epoll01.dir/epoll01.c.o  -o ../bin/epoll01 ../lib/libC-Net.a -lpthread 

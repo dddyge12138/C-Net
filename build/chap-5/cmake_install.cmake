@@ -1,4 +1,4 @@
-# Install script for directory: /home/yytest/yytest/C-Test/chap-5
+# Install script for directory: /home/yytest/yytest/C-Net/chap-5
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yytest/yytest/C-Test
+CMAKE_SOURCE_DIR = /home/yytest/yytest/C-Net
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yytest/yytest/C-Test/build
+CMAKE_BINARY_DIR = /home/yytest/yytest/C-Net/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ install/local/fast: preinstall/fast
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Test/build/CMakeFiles /home/yytest/yytest/C-Test/build/chap-22/CMakeFiles/progress.marks
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-22/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Test/build/CMakeFiles 0
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Net/build/CMakeFiles /home/yytest/yytest/C-Net/build/chap-22/CMakeFiles/progress.marks
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-22/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Net/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-22/clean
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-22/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-22/preinstall
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-22/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-22/preinstall
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-22/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 chap-22/CMakeFiles/nonblockingserver.dir/rule:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-22/CMakeFiles/nonblockingserver.dir/rule
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-22/CMakeFiles/nonblockingserver.dir/rule
 .PHONY : chap-22/CMakeFiles/nonblockingserver.dir/rule
 
 # Convenience name for target.
@@ -168,7 +168,7 @@ nonblockingserver: chap-22/CMakeFiles/nonblockingserver.dir/rule
 
 # fast build rule for target.
 nonblockingserver/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-22/CMakeFiles/nonblockingserver.dir/build.make chap-22/CMakeFiles/nonblockingserver.dir/build
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-22/CMakeFiles/nonblockingserver.dir/build.make chap-22/CMakeFiles/nonblockingserver.dir/build
 .PHONY : nonblockingserver/fast
 
 nonblockingserver.o: nonblockingserver.c.o
@@ -177,7 +177,7 @@ nonblockingserver.o: nonblockingserver.c.o
 
 # target to build an object file
 nonblockingserver.c.o:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-22/CMakeFiles/nonblockingserver.dir/build.make chap-22/CMakeFiles/nonblockingserver.dir/nonblockingserver.c.o
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-22/CMakeFiles/nonblockingserver.dir/build.make chap-22/CMakeFiles/nonblockingserver.dir/nonblockingserver.c.o
 .PHONY : nonblockingserver.c.o
 
 nonblockingserver.i: nonblockingserver.c.i
@@ -186,7 +186,7 @@ nonblockingserver.i: nonblockingserver.c.i
 
 # target to preprocess a source file
 nonblockingserver.c.i:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-22/CMakeFiles/nonblockingserver.dir/build.make chap-22/CMakeFiles/nonblockingserver.dir/nonblockingserver.c.i
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-22/CMakeFiles/nonblockingserver.dir/build.make chap-22/CMakeFiles/nonblockingserver.dir/nonblockingserver.c.i
 .PHONY : nonblockingserver.c.i
 
 nonblockingserver.s: nonblockingserver.c.s
@@ -195,7 +195,7 @@ nonblockingserver.s: nonblockingserver.c.s
 
 # target to generate assembly for a file
 nonblockingserver.c.s:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-22/CMakeFiles/nonblockingserver.dir/build.make chap-22/CMakeFiles/nonblockingserver.dir/nonblockingserver.c.s
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-22/CMakeFiles/nonblockingserver.dir/build.make chap-22/CMakeFiles/nonblockingserver.dir/nonblockingserver.c.s
 .PHONY : nonblockingserver.c.s
 
 # Help Target
@@ -225,6 +225,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

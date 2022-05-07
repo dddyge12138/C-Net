@@ -1,1 +1,1 @@
-/usr/bin/cc   -rdynamic CMakeFiles/unixdataserver.dir/unixdataserver.c.o  -o ../bin/unixdataserver ../lib/libC-Test.a -lpthread 
+/usr/bin/cc   -rdynamic CMakeFiles/unixdataserver.dir/unixdataserver.c.o  -o ../bin/unixdataserver -lC-Test 

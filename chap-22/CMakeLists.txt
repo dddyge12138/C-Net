@@ -1,2 +1,2 @@
 add_executable(nonblockingserver nonblockingserver.c)
-target_link_libraries(nonblockingserver C-Test)
+target_link_libraries(nonblockingserver C-Net)

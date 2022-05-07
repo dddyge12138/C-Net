@@ -19,5 +19,5 @@ chap-27/CMakeFiles/poll-server-onethread.dir/poll-server-onethread.c.o
  ../lib/tcp_connection.h
  ../lib/tcp_server.h
  ../lib/thread_pool.h
- /home/yytest/yytest/C-Test/chap-27/poll-server-onethread.c
+ /home/yytest/yytest/C-Net/chap-27/poll-server-onethread.c
  include/config.h

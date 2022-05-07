@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/yytest/yytest/C-Test
+CMAKE_SOURCE_DIR = /home/yytest/yytest/C-Net
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/yytest/yytest/C-Test/build
+CMAKE_BINARY_DIR = /home/yytest/yytest/C-Net/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -126,14 +126,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Test/build/CMakeFiles /home/yytest/yytest/C-Test/build/chap-7/CMakeFiles/progress.marks
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Test/build/CMakeFiles 0
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Net/build/CMakeFiles /home/yytest/yytest/C-Net/build/chap-7/CMakeFiles/progress.marks
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/yytest/yytest/C-Net/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/clean
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/clean
 .PHONY : clean
 
 # The main clean target
@@ -143,22 +143,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/preinstall
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/preinstall
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 chap-7/CMakeFiles/unixstreamclient.dir/rule:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/CMakeFiles/unixstreamclient.dir/rule
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/CMakeFiles/unixstreamclient.dir/rule
 .PHONY : chap-7/CMakeFiles/unixstreamclient.dir/rule
 
 # Convenience name for target.
@@ -168,12 +168,12 @@ unixstreamclient: chap-7/CMakeFiles/unixstreamclient.dir/rule
 
 # fast build rule for target.
 unixstreamclient/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamclient.dir/build.make chap-7/CMakeFiles/unixstreamclient.dir/build
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamclient.dir/build.make chap-7/CMakeFiles/unixstreamclient.dir/build
 .PHONY : unixstreamclient/fast
 
 # Convenience name for target.
 chap-7/CMakeFiles/unixdataserver.dir/rule:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/CMakeFiles/unixdataserver.dir/rule
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/CMakeFiles/unixdataserver.dir/rule
 .PHONY : chap-7/CMakeFiles/unixdataserver.dir/rule
 
 # Convenience name for target.
@@ -183,12 +183,12 @@ unixdataserver: chap-7/CMakeFiles/unixdataserver.dir/rule
 
 # fast build rule for target.
 unixdataserver/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixdataserver.dir/build.make chap-7/CMakeFiles/unixdataserver.dir/build
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixdataserver.dir/build.make chap-7/CMakeFiles/unixdataserver.dir/build
 .PHONY : unixdataserver/fast
 
 # Convenience name for target.
 chap-7/CMakeFiles/unixstreamserver.dir/rule:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/CMakeFiles/unixstreamserver.dir/rule
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/CMakeFiles/unixstreamserver.dir/rule
 .PHONY : chap-7/CMakeFiles/unixstreamserver.dir/rule
 
 # Convenience name for target.
@@ -198,12 +198,12 @@ unixstreamserver: chap-7/CMakeFiles/unixstreamserver.dir/rule
 
 # fast build rule for target.
 unixstreamserver/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamserver.dir/build.make chap-7/CMakeFiles/unixstreamserver.dir/build
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamserver.dir/build.make chap-7/CMakeFiles/unixstreamserver.dir/build
 .PHONY : unixstreamserver/fast
 
 # Convenience name for target.
 chap-7/CMakeFiles/unixdataclient.dir/rule:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/CMakeFiles/unixdataclient.dir/rule
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f CMakeFiles/Makefile2 chap-7/CMakeFiles/unixdataclient.dir/rule
 .PHONY : chap-7/CMakeFiles/unixdataclient.dir/rule
 
 # Convenience name for target.
@@ -213,7 +213,7 @@ unixdataclient: chap-7/CMakeFiles/unixdataclient.dir/rule
 
 # fast build rule for target.
 unixdataclient/fast:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixdataclient.dir/build.make chap-7/CMakeFiles/unixdataclient.dir/build
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixdataclient.dir/build.make chap-7/CMakeFiles/unixdataclient.dir/build
 .PHONY : unixdataclient/fast
 
 unixdataclient.o: unixdataclient.c.o
@@ -222,7 +222,7 @@ unixdataclient.o: unixdataclient.c.o
 
 # target to build an object file
 unixdataclient.c.o:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixdataclient.dir/build.make chap-7/CMakeFiles/unixdataclient.dir/unixdataclient.c.o
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixdataclient.dir/build.make chap-7/CMakeFiles/unixdataclient.dir/unixdataclient.c.o
 .PHONY : unixdataclient.c.o
 
 unixdataclient.i: unixdataclient.c.i
@@ -231,7 +231,7 @@ unixdataclient.i: unixdataclient.c.i
 
 # target to preprocess a source file
 unixdataclient.c.i:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixdataclient.dir/build.make chap-7/CMakeFiles/unixdataclient.dir/unixdataclient.c.i
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixdataclient.dir/build.make chap-7/CMakeFiles/unixdataclient.dir/unixdataclient.c.i
 .PHONY : unixdataclient.c.i
 
 unixdataclient.s: unixdataclient.c.s
@@ -240,7 +240,7 @@ unixdataclient.s: unixdataclient.c.s
 
 # target to generate assembly for a file
 unixdataclient.c.s:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixdataclient.dir/build.make chap-7/CMakeFiles/unixdataclient.dir/unixdataclient.c.s
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixdataclient.dir/build.make chap-7/CMakeFiles/unixdataclient.dir/unixdataclient.c.s
 .PHONY : unixdataclient.c.s
 
 unixdataserver.o: unixdataserver.c.o
@@ -249,7 +249,7 @@ unixdataserver.o: unixdataserver.c.o
 
 # target to build an object file
 unixdataserver.c.o:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixdataserver.dir/build.make chap-7/CMakeFiles/unixdataserver.dir/unixdataserver.c.o
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixdataserver.dir/build.make chap-7/CMakeFiles/unixdataserver.dir/unixdataserver.c.o
 .PHONY : unixdataserver.c.o
 
 unixdataserver.i: unixdataserver.c.i
@@ -258,7 +258,7 @@ unixdataserver.i: unixdataserver.c.i
 
 # target to preprocess a source file
 unixdataserver.c.i:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixdataserver.dir/build.make chap-7/CMakeFiles/unixdataserver.dir/unixdataserver.c.i
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixdataserver.dir/build.make chap-7/CMakeFiles/unixdataserver.dir/unixdataserver.c.i
 .PHONY : unixdataserver.c.i
 
 unixdataserver.s: unixdataserver.c.s
@@ -267,7 +267,7 @@ unixdataserver.s: unixdataserver.c.s
 
 # target to generate assembly for a file
 unixdataserver.c.s:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixdataserver.dir/build.make chap-7/CMakeFiles/unixdataserver.dir/unixdataserver.c.s
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixdataserver.dir/build.make chap-7/CMakeFiles/unixdataserver.dir/unixdataserver.c.s
 .PHONY : unixdataserver.c.s
 
 unixstreamclient.o: unixstreamclient.c.o
@@ -276,7 +276,7 @@ unixstreamclient.o: unixstreamclient.c.o
 
 # target to build an object file
 unixstreamclient.c.o:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamclient.dir/build.make chap-7/CMakeFiles/unixstreamclient.dir/unixstreamclient.c.o
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamclient.dir/build.make chap-7/CMakeFiles/unixstreamclient.dir/unixstreamclient.c.o
 .PHONY : unixstreamclient.c.o
 
 unixstreamclient.i: unixstreamclient.c.i
@@ -285,7 +285,7 @@ unixstreamclient.i: unixstreamclient.c.i
 
 # target to preprocess a source file
 unixstreamclient.c.i:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamclient.dir/build.make chap-7/CMakeFiles/unixstreamclient.dir/unixstreamclient.c.i
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamclient.dir/build.make chap-7/CMakeFiles/unixstreamclient.dir/unixstreamclient.c.i
 .PHONY : unixstreamclient.c.i
 
 unixstreamclient.s: unixstreamclient.c.s
@@ -294,7 +294,7 @@ unixstreamclient.s: unixstreamclient.c.s
 
 # target to generate assembly for a file
 unixstreamclient.c.s:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamclient.dir/build.make chap-7/CMakeFiles/unixstreamclient.dir/unixstreamclient.c.s
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamclient.dir/build.make chap-7/CMakeFiles/unixstreamclient.dir/unixstreamclient.c.s
 .PHONY : unixstreamclient.c.s
 
 unixstreamserver.o: unixstreamserver.c.o
@@ -303,7 +303,7 @@ unixstreamserver.o: unixstreamserver.c.o
 
 # target to build an object file
 unixstreamserver.c.o:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamserver.dir/build.make chap-7/CMakeFiles/unixstreamserver.dir/unixstreamserver.c.o
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamserver.dir/build.make chap-7/CMakeFiles/unixstreamserver.dir/unixstreamserver.c.o
 .PHONY : unixstreamserver.c.o
 
 unixstreamserver.i: unixstreamserver.c.i
@@ -312,7 +312,7 @@ unixstreamserver.i: unixstreamserver.c.i
 
 # target to preprocess a source file
 unixstreamserver.c.i:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamserver.dir/build.make chap-7/CMakeFiles/unixstreamserver.dir/unixstreamserver.c.i
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamserver.dir/build.make chap-7/CMakeFiles/unixstreamserver.dir/unixstreamserver.c.i
 .PHONY : unixstreamserver.c.i
 
 unixstreamserver.s: unixstreamserver.c.s
@@ -321,7 +321,7 @@ unixstreamserver.s: unixstreamserver.c.s
 
 # target to generate assembly for a file
 unixstreamserver.c.s:
-	cd /home/yytest/yytest/C-Test/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamserver.dir/build.make chap-7/CMakeFiles/unixstreamserver.dir/unixstreamserver.c.s
+	cd /home/yytest/yytest/C-Net/build && $(MAKE) -f chap-7/CMakeFiles/unixstreamserver.dir/build.make chap-7/CMakeFiles/unixstreamserver.dir/unixstreamserver.c.s
 .PHONY : unixstreamserver.c.s
 
 # Help Target
@@ -363,6 +363,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/yytest/yytest/C-Test/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/yytest/yytest/C-Net/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

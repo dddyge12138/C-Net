@@ -6,5 +6,5 @@ C_FLAGS =   -std=gnu99
 
 C_DEFINES = 
 
-C_INCLUDES = -I/home/yytest/yytest/C-Test -I/home/yytest/yytest/C-Test/build/include 
+C_INCLUDES = -I/home/yytest/yytest/C-Net -I/home/yytest/yytest/C-Net/build/include 
 

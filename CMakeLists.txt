@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.1)
-project(C-Test C CXX)
+project(C-Net C CXX)
 
 set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_C_STANDARD 99)

@@ -1,1 +1,1 @@
-/usr/bin/cc   -rdynamic CMakeFiles/thread02.dir/thread02.c.o  -o ../bin/thread02 ../lib/libC-Test.a -lpthread 
+/usr/bin/cc   -rdynamic CMakeFiles/thread02.dir/thread02.c.o  -o ../bin/thread02 ../lib/libC-Net.a -lpthread 
